@@ -1,6 +1,7 @@
 {
     "name": "payamava/wallet",
     "description": "This package is designed to manage users wallet",
+"keywords": ["laravel","wallet"],
     "authors": [
         {
             "name": "Meysam",
