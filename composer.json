@@ -9,7 +9,7 @@
     ],
     "autoload" : {
         "psr-4":{
-            "payamava//wallet" : "src"
+            "payamava//wallet\\" : "src"
         }
     },
     "minimum-stability": "dev",
