@@ -43,7 +43,7 @@ trait Walletable
     /**
      * @return mixed
      */
-    public function first()
+    public function firstCash()
     {
         return optional($this->wallet()->first());
 
@@ -52,7 +52,7 @@ trait Walletable
     /**
      * @return mixed
      */
-    public function last()
+    public function lastCash()
     {
         return optional($this->wallet()->orderBy('id','desc')->first());
 
