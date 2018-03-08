@@ -20,8 +20,9 @@ class CreateWalletTable extends Migration
             $table->string('type');
             $table->timestamps();
             
+            
             $table->foreign('user_id')
-                ->referneces('id')->on('users')
+                ->references('id')->on('users')
                 ->onDelete('cascade');
         });
     }
