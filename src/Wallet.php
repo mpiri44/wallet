@@ -16,12 +16,5 @@ class Wallet extends Model{
     {
         $this->hasOne(User::class);
     }
-    public function setCreatedAtAttribute()
-    {
-        $this->attributes['created_at'] = verta();
-    }
-    public function setUpdatedAtAttribute()
-    {
-        $this->attributes['updated_at'] = verta();
-    }
+
 }

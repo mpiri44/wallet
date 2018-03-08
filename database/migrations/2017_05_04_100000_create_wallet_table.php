@@ -17,8 +17,12 @@ class CreateWalletTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->bigInteger('amount');
-            $table->dateTime('created_at');
-            $table->dateTime('updated_at');
+            $table->string('type');
+            $table->timestamps();
+            
+            $table->foreign('user_id')
+                ->referneces('id')->on('users')
+                ->onDelete('cascade');
         });
     }
 
@@ -32,3 +36,4 @@ class CreateWalletTable extends Migration
         Schema::dropIfExists('wallet');
     }
 }
+

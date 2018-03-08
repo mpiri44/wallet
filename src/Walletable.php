@@ -51,7 +51,7 @@ trait Walletable
     /**
      * @return mixed
      */
-    public function latest()
+    public function last()
     {
         return optional($this->wallet()->orderBy('id','desc')->first());
 
