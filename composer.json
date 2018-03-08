@@ -1,0 +1,17 @@
+{
+    "name": "payamava/wallet",
+    "description": "This package is designed to manage users wallet",
+    "authors": [
+        {
+            "name": "Meysam",
+            "email": "mpiri44@gmail.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4":{
+            "payamava//wallet" : "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
