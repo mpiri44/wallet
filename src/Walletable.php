@@ -23,11 +23,12 @@ trait Walletable
      * @param $amount
      * @return mixed
      */
-    public function cash($amount)
+    public function cash($amount,$type)
     {
         return Wallet::create([
             'user_id'   =>  $this->id,
-            'amount'    =>  $amount
+            'amount'    =>  $amount,
+	    'type'	=>  $type	
         ]);
     }
 
